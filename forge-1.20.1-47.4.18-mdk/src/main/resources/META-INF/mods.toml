@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+# O ID não pode ter espaços! Usei "hostiltopacific"
+modId="hostiltopacific"
+version="1.0"
+displayName="Hostil to Pacific Mod"
+authors="Gabriel"
+description='''Este mod permite domesticar o Warden e outros mobs hostis usando uma etiqueta com o nome Amigao.'''
+
+[[dependencies.hostiltopacific]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hostiltopacific]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
