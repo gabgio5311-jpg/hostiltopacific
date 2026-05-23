@@ -24,9 +24,9 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
-@Mod("MobPacifier")
+@Mod("mobpacifier")
 public class ExampleMod {
-    public static final String MOD_ID = "MobPacifier";
+    public static final String MOD_ID = "mobpacifier";
 
     public ExampleMod() {
         MinecraftForge.EVENT_BUS.register(this);

@@ -6,10 +6,10 @@ plugins {
 }
 
 version = '1.0.0'
-group = 'com.example.MobPacifier'
+group = 'com.example.mobpacifier'
 
 base {
-    archivesBaseName = 'MobPacifier'
+    archivesBaseName = 'mobpacifier'
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -29,18 +29,18 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                "MobPacifier" {
+                "mobpacifier" {
                     source sourceSets.main
                 }
             }
         }
 
         client {
-            property 'forge.enabledGameTestNamespaces', "MobPacifier"
+            property 'forge.enabledGameTestNamespaces', "mobpacifier"
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', "MobPacifier"
+            property 'forge.enabledGameTestNamespaces', "mobpacifier"
             args '--nogui'
         }
     }
@@ -64,12 +64,12 @@ tasks.named('processResources', ProcessResources).configure {
             forge_version: '47.4.10',
             forge_version_range: '[47,)',
             loader_version_range: '[34,)',
-            mod_id: 'MobPacifier',
+            mod_id: 'mobpacifier',
             mod_name: 'Mob Pacifier',
             mod_license: 'MIT',
             mod_version: '1.0.0',
             mod_authors: 'Gabriel',
-            mod_description: 'Remove geodos de ametista do mundo.',
+            mod_description: 'Allows players to tame hostile mobs using a nametag called "Amigao".',
     ]
     inputs.properties replaceProperties
 
@@ -81,7 +81,7 @@ tasks.named('processResources', ProcessResources).configure {
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-                'Specification-Title'     : "MobPacifier",
+                'Specification-Title'     : "mobpacifier",
                 'Specification-Vendor'    : "Gabriel",
                 'Specification-Version'   : '1',
                 'Implementation-Title'    : project.name,
