@@ -6,10 +6,10 @@ plugins {
 }
 
 version = '1.0.0'
-group = 'com.example.mobpacifier'
+group = 'com.example.mobpacified'
 
 base {
-    archivesBaseName = 'mobpacifier'
+    archivesBaseName = 'mobpacified'
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -36,11 +36,11 @@ minecraft {
         }
 
         client {
-            property 'forge.enabledGameTestNamespaces', "mobpacifier"
+            property 'forge.enabledGameTestNamespaces', "mobpacified"
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', "mobpacifier"
+            property 'forge.enabledGameTestNamespaces', "mobpacified"
             args '--nogui'
         }
     }
@@ -64,8 +64,8 @@ tasks.named('processResources', ProcessResources).configure {
             forge_version: '47.4.10',
             forge_version_range: '[47,)',
             loader_version_range: '[34,)',
-            mod_id: 'mobpacifier',
-            mod_name: 'Mob Pacifier',
+            mod_id: 'mobpacified',
+            mod_name: 'Mob Pacified',
             mod_license: 'MIT',
             mod_version: '1.0.0',
             mod_authors: 'Gabriel',
@@ -81,7 +81,7 @@ tasks.named('processResources', ProcessResources).configure {
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-                'Specification-Title'     : "mobpacifier",
+                'Specification-Title'     : "mobpacified",
                 'Specification-Vendor'    : "Gabriel",
                 'Specification-Version'   : '1',
                 'Implementation-Title'    : project.name,

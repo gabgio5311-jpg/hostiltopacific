@@ -3,20 +3,20 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-modId="mobpacifier"
+modId="mobpacified"
 version="1.0"
-displayName="Mob Pacifier Mod"
+displayName="Mob Pacified Mobs"
 authors="Gabriel"
 description='''Allows players to tame hostile mobs using a nametag called "Amigao".'''
 
-[[dependencies.mobpacifier]]
+[[dependencies.mobpacified]]
 modId="forge"
 mandatory=true
 versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.mobpacifier]]
+[[dependencies.mobpacified]]
 modId="minecraft"
 mandatory=true
 versionRange="${minecraft_version_range}"
