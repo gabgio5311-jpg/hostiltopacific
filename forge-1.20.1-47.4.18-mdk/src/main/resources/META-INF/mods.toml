@@ -3,21 +3,21 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-# O ID não pode ter espaços! Usei "hostiltopacific"
-modId="hostiltopacific"
+# O ID não pode ter espaços! Usei "MobPacifier"
+modId="MobPacifier"
 version="1.0"
-displayName="Hostil to Pacific Mod"
+displayName="Mob Pacifier Mod"
 authors="Gabriel"
-description='''Este mod permite domesticar o Warden e outros mobs hostis usando uma etiqueta com o nome Amigao.'''
+description='''Allows players to tame hostile mobs using a nametag called "Amigao".'''
 
-[[dependencies.hostiltopacific]]
+[[dependencies.MobPacifier]]
 modId="forge"
 mandatory=true
 versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.hostiltopacific]]
+[[dependencies.MobPacifier]]
 modId="minecraft"
 mandatory=true
 versionRange="${minecraft_version_range}"
